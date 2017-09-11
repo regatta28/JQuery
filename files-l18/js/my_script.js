@@ -7,3 +7,6 @@ $(document).ready(function(){
     $("tr:odd").css("background-color", "red");
     $("tr:even").css("background-color", "pink");
 })
+$("p").click(function(){
+   $("p").css("color", "red");
+});
