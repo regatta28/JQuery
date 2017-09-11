@@ -5,8 +5,8 @@ $(document).ready(function() {
         $("p").css("color", "red");
     });
   
-    $("div h2").hover(function(){
-        $("div h2").css("background-color", "light-blue");
+    $("h2").hover(function(){
+        $("h2").css("background-color", "light-blue");
     });
 
 
