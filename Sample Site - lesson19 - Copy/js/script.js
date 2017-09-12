@@ -2,12 +2,22 @@ $(document).ready(function() {
     
 
     $("p").click(function(){
-        $("p").css("color", "red");
+        $("p").addClass("highlight_text");
     });
   
     $("h2").hover(function(){
-        $("h2").css("background-color", "light-blue");
+        $("h2").addClass("hover_color");
     });
 
+    $("#hr_html").hover(function(){
+        $("#hr_html").addClass("font_increase");
+    });
+
+    $("a").hover(function(){
+        $("body").addClass("bodycolor_change");
+    });
+    $("a").mouseleave(function(){
+        $("body").addClass("bodycolor_grey");
+    });
 
 }); 

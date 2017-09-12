@@ -51,4 +51,20 @@ Navigation
   border: solid 5px #ccc;
 }
 
+.highlight_text {
+	color: red;
+}
+
+.hover_color {
+	background-color: lightblue;
+}
+.font_increase {
+	font-size: 35px;
+}
+.bodycolor_change {
+	background-color: black;
+}
+.bodycolor_grey {
+	background-color: grey;
+}
 
