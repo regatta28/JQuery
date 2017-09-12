@@ -44,6 +44,16 @@ $(document).ready(function() {
     $("#button1").click(function(){
         $("#button1").fadeOut("slow").fadeIn("slow");
     });
+    $(".stream_nav").on("click", function() {
+        var elementId = $(this).attr("id");
+        var cardNames = $(".card").attr("class").split(" ")[0];
+         if ($("." + elementId).css("background-color") == "rgb(235, 82, 85)") {
+            $("." + elementId).css("background-color", "#fff");
+        } else {
+            $("." + cardNames).css("background-color", "#fff");
+            $("." + elementId).css("background-color", "rgb(235, 82, 85)");
+        }
+    });
 
     
    
