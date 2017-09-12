@@ -13,11 +13,21 @@ $(document).ready(function() {
         $("#hr_html").addClass("font_increase");
     });
 
-    $("a").hover(function(){
+    $("button").hover(function(){
         $("body").addClass("bodycolor_change");
     });
-    $("a").mouseleave(function(){
+    $("button").mouseleave(function(){
         $("body").addClass("bodycolor_grey");
+    });
+    $("#button1").hide(500);
+    $("#button2").click(function(){
+        $("#paragraph2").slideToggle();
+        });
+    $("#button3").mouseenter(function(){
+        $("#button3").fadeTo(1000, 0.5);
+    });
+    $("#button3").mouseleave(function(){
+        $("#button3").fadeTo(1000, 1);
     });
 
 }); 
