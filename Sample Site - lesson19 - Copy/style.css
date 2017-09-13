@@ -21,10 +21,11 @@ div {
 	display: flex;		/* makes container a flexbox*/
 	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
 	box-sizing: border-box;
-	margin-right: auto;
-	margin-left: auto;
+	 margin-right: auto;
+	margin-left: auto; 
 	max-width: 1050px;	
 	padding-bottom: 10px;
+	vertical-align: baseline;
 }
 .bottom_button{
 	display: flex;
@@ -37,6 +38,7 @@ div {
 	padding: 1em .75em;
 	text-decoration: none;
 	color: #fff;
+	align-self: baseline;
 
 }
 
@@ -52,12 +54,13 @@ div {
 	flex: 1; /* */
 	display: flex;	/* make the contents controllable by flexbox*/
 	flex-flow: column;	/* */
-	max-width: 31%; /**/
-	margin: 10px;
-	padding: 20px;
+	max-width: 35%; /**/
+	margin: 0;
+	padding: 0;
 	background-color: #fff;
-	align-items: baseline;
-	justify-content: space-around;
+	align-self: baseline;
+	justify-content: space-between;
+	
 	
 }
 .card_image {
@@ -65,10 +68,24 @@ div {
 }
 .card_para {
 	flex: 1 0 auto;
+	padding-top: 50px;
+	
 }
 .row {
 	flex: 1;
 	width: 100%;
+	padding-bottom: 100px;
+	margin: 0;
+	
+}
+button {
+	align-self: baseline;
+}
+#button3, #button2 {
+	margin-top: 70px;
+}
+#button5, #button6 {
+	margin-top: 52px;
 }
 
 
@@ -83,21 +100,23 @@ html {
 }
 body {
 	margin: 0 0 100px;
-	padding: 25px;
+	padding: 0;
 }
 footer {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 0;
 }
 nav {
 	font-family: roboto;
 	background-color: #eee;
-	margin: auto;
+	
 	width: 100%;
 }
 ul {
@@ -166,6 +185,9 @@ li {
 }
 #logo {
 	width: 800px;
+	margin: auto;
+}
+.wrapper {
 	margin: auto;
 }
 
