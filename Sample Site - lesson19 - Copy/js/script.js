@@ -46,7 +46,7 @@ $(document).ready(function() {
     });
     $(".stream_nav").on("click", function() {
         var elementId = $(this).attr("id");
-        var cardNames = $(".card").attr("class").split(" ")[0];
+        var cardNames = $(".card").attr("class").split(" ");
          if ($("." + elementId).css("background-color") == "rgb(235, 82, 85)") {
             $("." + elementId).css("background-color", "#fff");
         } else {

@@ -1,16 +1,34 @@
-
+body {
+	font-family: 'Roboto',sans-serif;
+	background-color: #eee;
+}
+h1 {
+	font-size: 3em;
+	text-align: center;
+}
+h2 {
+	font-size: 1em;
+	text-align: left;
+}
+p {
+	font-size: .9em;
+}
+div {
+	border-radius: 4px;
+}
 #container
 {
 	display: flex;		/* makes container a flexbox*/
 	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
-	box-sizing:border-box;
-	margin-right:auto;
-	margin-left:auto;
-	max-width:1050px;	
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1050px;	
+	padding-bottom: 10px;
 }
 .bottom_button{
 	display: flex;
-	box-sizing:border-box;
+	box-sizing: border-box;
 	border-radius: 4px;
 	display: block;
 	width: 100%;
@@ -24,28 +42,92 @@
 
 .card_bottom{
 	display: flex;
-	flex-flow:column;
+	flex-flow: column;
+}
+.card_head {
+	flex: 0;
 }
 
 .card{
-	flex:1; /* */
+	flex: 1; /* */
 	display: flex;	/* make the contents controllable by flexbox*/
-	flex-flow:column;	/* */
-	max-width: 240px; /**/
+	flex-flow: column;	/* */
+	max-width: 31%; /**/
 	margin: 10px;
 	padding: 20px;
 	background-color: #fff;
+	align-items: baseline;
+	justify-content: space-around;
+	
 }
+.card_image {
+	width: 100%;
+}
+.card_para {
+	flex: 1 0 auto;
+}
+.row {
+	flex: 1;
+	width: 100%;
+}
+
 
 
 /*************************
 Navigation
-
 **************************/
 
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin: 0 0 100px;
+	padding: 25px;
+}
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+nav {
+	font-family: roboto;
+	background-color: #eee;
+	margin: auto;
+	width: 100%;
+}
+ul {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row;
+	align-items: baseline;
+	border-radius: 10px;
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+li {
+	flex: 1;
+	height: 30px;
+	font-family: Dosis;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.3em;
+	justify-content: space-around;
+	align-items: baseline;
+}
+#logoNav {
+	flex: 6;
+	text-align: left;
+	font-size: 2em;
+	font-weight: bold;
+}
 
 .underline{
-  text-decoration:underline;
+  text-decoration: underline;
 }
 .border{
   border: solid 5px #ccc;
@@ -73,4 +155,28 @@ Navigation
 }
 .makeBorder {
 	border: solid 2px black;
+}
+#myfooter {
+	width: 100%;
+	text-align: center;
+}
+#copyright {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#logo {
+	width: 800px;
+	margin: auto;
+}
+
+
+
+@media screen and (max-width: 700px) {
+	ul {
+		flex-flow: column;
+		align-items: center;
+	}
+	li {
+		font-size: 2em;
+	}
 }
