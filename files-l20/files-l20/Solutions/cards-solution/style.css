@@ -27,7 +27,7 @@ div{
 }
 .bottom_button{
 	display: flex;
-	box-sizing:border-box;
+	box-sizing: border-box;
 	border-radius: 4px;
 	display: block;
 	width: 100%;
@@ -39,16 +39,16 @@ div{
 
 }
 
-.card_bottom{
+ .card_bottom{
 	display: flex;
-	flex-flow:column;
-}
+	flex-flow: column;
+} 
 .card_head{
 	flex:0;
 }
-.card_para{
+ .card_para{
 	flex:1 0 auto;
-}
+} 
 
 #container
 {
@@ -91,14 +91,14 @@ div{
 Navigation
 
 **************************/
-
+ 
 nav{
 	font-family: roboto;
 	background-color: #eee;
 	margin: 30px auto;
 	width: 100%;
-}
-ul{
+ } 
+ ul{
 	display: flex;
 	justify-content:space-between;
 	flex-flow: row;
@@ -110,8 +110,8 @@ ul{
 	border-radius: 10px;
 	list-style-type: none; /*Remove Bullets*/
 	padding: 0;	
-}
-li{
+}  
+ li{
 	flex:1;
 	height: 30px;
 	/*width:10%;*/
@@ -122,14 +122,14 @@ li{
 	padding:20px 20px 20px 20px;
 	text-align: center;
 	font-size: 1.3em;
-}
+} 
 
-#logoNav{
+ #logoNav{
 	flex:6;
 	text-align: left;
 	font-size: 2em;
 	font-weight: bold;
-}
+} 
 
 .underline{
   text-decoration:underline;
