@@ -99,7 +99,7 @@ html {
 	min-height: 100%;
 }
 body {
-	margin: 0 0 100px;
+	 margin: 0 0 100px; 
 	padding: 0;
 }
 footer {
@@ -188,7 +188,8 @@ li {
 	margin: auto;
 }
 .wrapper {
-	margin: auto;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 
 
